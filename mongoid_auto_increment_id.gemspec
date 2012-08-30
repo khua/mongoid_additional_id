@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "mongoid_additional_id"
-  s.version     = "0.5.6"
+  s.version     = "0.5.8"
   s.platform    = Gem::Platform::RUBY
   s.authors	= ["Kevin Hua"]
   s.email       = ["kevin@hujoy.com"]
