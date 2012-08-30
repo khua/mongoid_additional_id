@@ -15,6 +15,14 @@ module Mongoid
     # define Integer for id field
     included do
       field :_id, :type => Integer
+      
+      def id
+        self._id
+      end
+
+      def id=(value)
+        self._id = value
+      end
     end
 
     # hack id nil when Document.new
