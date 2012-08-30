@@ -7,7 +7,7 @@ Idea from MongoDB document: [How to Make an Auto Incrementing Field](http://www.
 ## Installation
 
     # for Mongoid 3.0.x
-    gem 'mongoid_additional_id', '0.5.0', :git => 'git://github.com/khua/mongoid_additional_id.git'
+    gem 'mongoid_additional_id', '0.5.8', :git => 'git://github.com/khua/mongoid_additional_id.git'
 
 ## USAGE
 
