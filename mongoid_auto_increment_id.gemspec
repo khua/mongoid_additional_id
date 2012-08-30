@@ -3,9 +3,9 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "mongoid_additional_id"
-  s.version     = "0.5.0"
+  s.version     = "0.5.5"
   s.platform    = Gem::Platform::RUBY
-  s.hackers	= ["Kevin Hua"]
+  s.authors	= ["Kevin Hua"]
   s.email       = ["kevin@hujoy.com"]
   s.homepage    = "https://github.com/khua/mongoid_additional_id"
   s.summary     = %q{Besides _id field, add id field with MySQL like auto increment for Mongoid}
