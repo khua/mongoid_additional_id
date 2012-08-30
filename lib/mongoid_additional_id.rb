@@ -14,20 +14,20 @@ module Mongoid
   module Document
     # define Integer for id field
     included do
-      field :id, :type => Integer  
+      field :_id, :type => Integer  
     end
 
     # hack id nil when Document.new
-    #def identify
-    #  Identity.new(self).create
-    #  nil
-    #end
+    def identify
+      Identity.new(self).create
+      nil
+    end
 
     alias_method :super_as_document,:as_document
     def as_document
       result = super_as_document
-      if result["id"].blank?
-        result["id"] = Identity.generate_id(self)
+      if result["_id"].blank?
+        result["_id"] = Identity.generate_id(self)
       end
       result
     end
